@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily update ss-tproxy rules
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/sleep 1
+ExecStart=/usr/local/sbin/ss-tproxy update-gfwlist
+ExecStart=/usr/local/sbin/ss-tproxy update-chnlist
+ExecStart=/usr/local/sbin/ss-tproxy update-chnroute
+ExecStart=/usr/bin/systemctl restart ss-tproxy.service

@@ -1,0 +1,8 @@
+{
+    "mode": "tcp_and_udp",
+    "local_address": "127.0.0.1",
+    "local_port": 60080,
+    "no_delay": true,
+    "fast_open": true,
+    "reuse_port": true
+}

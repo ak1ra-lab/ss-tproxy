@@ -1,0 +1,6 @@
+[Unit]
+Description=Daily Update Subscribe Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/ss-subscribe.sh update-subscribe
